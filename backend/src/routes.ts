@@ -6,7 +6,7 @@ const routes = Router()
 routes.get('/champions', ChampionController.index)
 routes.get('/champions/:id', ChampionController.get)
 
-// static routes
+// TODO static routes
 //   /images/icons
 
 export default routes
