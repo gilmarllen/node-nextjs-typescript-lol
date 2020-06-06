@@ -1,14 +1,14 @@
 import Head from 'next/head'
 import { InferGetStaticPropsType } from 'next'
 
+import database from '../backend/database'
 import ChampionsList from '../components/champions-list'
 import { IChampionData } from '../interfaces/champions'
 
 const APP_NAME = 'Champions LoL Dashboard'
 
 export const getStaticProps = async () => {
-  const res = await fetch('http://localhost:3000/api/champions')
-  const champions: IChampionData[] = await res.json()
+  const champions: IChampionData[] = database.getAll()
   
   return {
     props: {
