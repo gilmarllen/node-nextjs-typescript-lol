@@ -10,15 +10,19 @@ type Props = {
   champion: IChampionData
 }
 
+const imageURL = (id: string) => `/champions-icon/${id}.png`
+
 const Champion = ({ champion }: Props) => {
   return (
     <>
       <Head>
         <title>{champion.name}</title>
+        <meta property="og:image" content={imageURL(champion.id)} />
+        <meta property="og:description" content={champion.blurb} />
       </Head>
       <div className={styles['champion-container']}>
         <div className={styles['champion-header']}>
-          <img src={`/champions-icon/${champion.id}.png`} className={styles['champion-icon']} />
+          <img src={imageURL(champion.id)} className={styles['champion-icon']} />
           <div className={styles['champion-title']}>
             <h1>
               {champion.name}

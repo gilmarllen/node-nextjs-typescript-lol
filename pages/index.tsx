@@ -7,8 +7,6 @@ import ChampionsList from '../components/champions-list'
 import InputSearch from '../components/input-search'
 import { IChampionData } from '../interfaces/champions'
 
-
-
 export const getStaticProps = async () => {
   const champions: IChampionData[] = database.getAll()
   

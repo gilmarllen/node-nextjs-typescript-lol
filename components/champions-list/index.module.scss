@@ -74,11 +74,12 @@ $c_0: #000000;
     padding: 20px;
     background-color: rgb(6, 28, 37);
     width: 100%;
-    font-size: 1.25em;
+    font-size: 0.75em;
     text-align: center;
+    word-break: break-word;
 
     @media (min-width: 1024px) {
-      font-size: 2em;
+      font-size: 1.5em;
     }
   }
 
