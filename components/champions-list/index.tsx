@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import styles from './index.module.scss'
 import { IChampionData } from '../../interfaces/champions'
 
@@ -9,11 +11,13 @@ export default function ChampionsList({ list }: Props) {
   return (
     <div className={styles['l-container']}>
       {list.map(champion => (
-        <div key={champion.id} className={styles['b-game-card']}>
-          <div className={styles['b-game-card__cover']} style={{backgroundImage: `url(/champions-loading/${champion.id}_0.jpg)`}}>
-            <span className={styles['b-game-card__label']}>{champion.name}</span>
+        <Link as={`/champion/${champion.id}`} href="/champion/[championID]" key={champion.id}>
+          <div className={styles['b-game-card']}>
+            <div className={styles['b-game-card__cover']} style={{backgroundImage: `url(/champions-loading/${champion.id}_0.jpg)`}}>
+              <span className={styles['b-game-card__label']}>{champion.name}</span>
+            </div>
           </div>
-        </div>
+        </Link>
       ))}
     </div>
   )

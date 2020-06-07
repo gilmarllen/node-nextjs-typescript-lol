@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import { InferGetStaticPropsType } from 'next'
 import { useState } from 'react'
 import Fuse from 'fuse.js'
@@ -8,7 +7,7 @@ import ChampionsList from '../components/champions-list'
 import InputSearch from '../components/input-search'
 import { IChampionData } from '../interfaces/champions'
 
-const APP_NAME = 'Champions LoL Dashboard'
+
 
 export const getStaticProps = async () => {
   const champions: IChampionData[] = database.getAll()
@@ -32,10 +31,6 @@ export const Home = ({ champions }: InferGetStaticPropsType<typeof getStaticProp
 
   return (
     <>
-      <Head>
-        <title>{APP_NAME}</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <InputSearch setTerm={handleSearchTerm} />
       {searchTerm !== '' && filteredChampions.length > 0 && <ChampionsList list={filteredChampions} />}
       {searchTerm === '' && <ChampionsList list={champions} />}
