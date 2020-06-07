@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <title>{APP_NAME}</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:image" content="/favicon.ico" />
+        <meta property="og:image" content="/lol_icon.png" />
         <meta property="og:description" content={APP_DESCRIPTION} />
       </Head>
       <Component {...pageProps} />
