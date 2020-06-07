@@ -51,7 +51,6 @@ const NoResults = () => (
       margin: auto;
       width: 50vw;
       text-align: center;
-      font-family: fantasy;
       color: #ff2929;
     `}</style>
   </div>  
