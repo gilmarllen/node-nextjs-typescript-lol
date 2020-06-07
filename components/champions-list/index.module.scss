@@ -9,6 +9,7 @@ $c_0: #000000;
   width: 100vw;
   max-width: 1200px;
   padding: 30px;
+  margin: auto;
 
   @media screen and (max-width: 760px) {
     grid-template-columns: repeat(2, 1fr);
@@ -38,6 +39,7 @@ $c_0: #000000;
     will-change: transform;
     transform: skewX(0.001deg);
     transition: transform 0.35s ease-in-out;
+    border-radius: 10px;
 
     // Gloss
 
