@@ -1,5 +1,3 @@
-# node-nextjs-typescript-lol
-
 # League of Legends Dashboard
 > Information about the champions of the League of Legends.
 
