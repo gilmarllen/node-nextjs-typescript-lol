@@ -8,7 +8,10 @@ This project is a practice for some development frameworks: Nextjs, React, Node 
 The live mode of the project can be found at https://node-nextjs-typescript-lol.now.sh/.
 
 ![lol-home](https://user-images.githubusercontent.com/18606900/84220086-5c6b8780-aaa8-11ea-9a08-aa7ccfc45210.JPG)
+*Home*
+
 ![lol-champion](https://user-images.githubusercontent.com/18606900/84220111-6db49400-aaa8-11ea-99b8-7da335c15193.JPG)
+*Champion page*
 
 The data and images of the champions were retrieved from https://riot-api-libraries.readthedocs.io/en/latest/ddragon.html (10.9.1).
 
@@ -48,6 +51,7 @@ npm run start
 * [ReactJS](https://reactjs.org/)
 * [Typescript](https://www.typescriptlang.org/)
 * [Chart.js](https://www.chartjs.org/)
+* [Fuse.js](https://fusejs.io/)
 
 ## Meta
 
