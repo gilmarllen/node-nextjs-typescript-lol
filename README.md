@@ -30,7 +30,7 @@ Windows & OS X & Linux:
 
 ```sh
 git clone https://github.com/gilmarllen/node-nextjs-typescript-lol.git
-cd wpp-clone
+cd node-nextjs-typescript-lol
 npm i
 ```
 ```sh
